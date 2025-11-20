@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>borkat</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>
 * {
     margin: 0;
@@ -34,9 +36,11 @@ body {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
     color: #ff0000;
+    letter-spacing: 1px;
 }
 
 .nav {
@@ -211,11 +215,11 @@ body {
         <button id="subscribeButton" onclick="subscribe()">Subscribe</button>
     </div>
 
+    <!-- Articles -->
     <div class="article">
         <div class="article-title">You Have to Enjoy It a Lot</div>
         <div class="article-excerpt">
-            Marketing is an open problem. People try to solve it in different ways—videos, writing, tweeting, 
-            parties, word of mouth. But the key is choosing a business that matches what you naturally enjoy doing.
+            Marketing is an open problem. People try to solve marketing in different ways—videos, writing, tweeting, parties, word of mouth. But the key is choosing a business that matches what you naturally enjoy doing.
         </div>
         <span class="read-more" onclick="openModal('modal5')">Read more</span>
     </div>
@@ -223,7 +227,7 @@ body {
     <div class="article">
         <div class="article-title">When You Truly Work for Yourself</div>
         <div class="article-excerpt">
-            The shift from employment to self-employment is more than financial. It rewires how you think about time, risk, and responsibility. When you work for yourself, there is no one to blame for failure except yourself. This clarity is both terrifying and liberating.
+            The shift from employment to self-employment is more than financial. It rewires how you think about time, risk, and responsibility. When you work for yourself, there is no one to blame for failure except yourself.
         </div>
         <span class="read-more" onclick="openModal('modal1')">Read more</span>
     </div>
@@ -231,7 +235,7 @@ body {
     <div class="article">
         <div class="article-title">Blame Yourself for Everything, and Preserve Your Agency</div>
         <div class="article-excerpt">
-            Most people externalize failure. The economy failed them. Their boss was unfair. Their circumstances were unlucky. But the moment you stop blaming external factors, you reclaim your power. You become the author of your life instead of a character in someone else's story.
+            Most people externalize failure. The economy failed them. Their boss was unfair. Their circumstances were unlucky. But the moment you stop blaming external factors, you reclaim your power.
         </div>
         <span class="read-more" onclick="openModal('modal2')">Read more</span>
     </div>
@@ -239,7 +243,7 @@ body {
     <div class="article">
         <div class="article-title">Good Products Are Hard to Vary</div>
         <div class="article-excerpt">
-            The best products often seem simple on the surface, but they are the result of countless decisions and constraints. You cannot simply change one thing without breaking the entire system. The pursuit itself becomes the obstacle.
+            The best products often seem simple on the surface, but they are the result of countless decisions and constraints.
         </div>
         <span class="read-more" onclick="openModal('modal3')">Read more</span>
     </div>
@@ -247,7 +251,7 @@ body {
     <div class="article">
         <div class="article-title">In Most Difficult Things in Life, the Solution is Indirect</div>
         <div class="article-excerpt">
-            We are taught to face problems head-on, but the most stubborn problems often require indirect approaches. You cannot force creativity, health, or happiness. They come as byproducts of other activities. The pursuit itself becomes the obstacle.
+            We are taught to face problems head-on, but the most stubborn problems often require indirect approaches.
         </div>
         <span class="read-more" onclick="openModal('modal4')">Read more</span>
     </div>
@@ -260,10 +264,6 @@ body {
     <div class="modal-title">When You Truly Work for Yourself</div>
     <div class="modal-text">
       The shift from employment to self-employment is more than financial. It rewires how you think about time, risk, and responsibility. When you work for yourself, there is no one to blame for failure except yourself. This clarity is both terrifying and liberating.
-      <br><br>
-      You become acutely aware of every decision's consequences. There is no safety net of a paycheck arriving regardless of performance. Your income is directly tied to the value you create and the decisions you make. This forces a level of intentionality that employment rarely demands.
-      <br><br>
-      But there is something deeper. When you work for yourself, you stop being a cog in a machine. You are no longer optimizing for someone else's vision or quarterly targets. You can build something that matters to you. The work itself becomes different when you own it completely.
     </div>
   </div>
 </div>
@@ -273,11 +273,7 @@ body {
     <span class="close" onclick="closeModal('modal2')">&times;</span>
     <div class="modal-title">Blame Yourself for Everything, and Preserve Your Agency</div>
     <div class="modal-text">
-      Most people externalize failure. The economy failed them. Their boss was unfair. Their circumstances were unlucky. But the moment you stop blaming external factors, you reclaim your power. You become the author of your life instead of a character in someone else's story.
-      <br><br>
-      This is not about self-blame in the destructive sense. It is about taking radical responsibility. Even when circumstances are genuinely difficult, there are still choices. You can choose how to respond, what to learn, where to pivot. This agency is the most valuable thing you possess.
-      <br><br>
-      People who blame themselves for failures are often the most successful because they believe they can change the outcome next time. They do not wait for permission or for conditions to improve. They move. And most importantly, they learn faster than anyone else.
+      Most people externalize failure. The economy failed them. Their boss was unfair. Their circumstances were unlucky. But the moment you stop blaming external factors, you reclaim your power.
     </div>
   </div>
 </div>
@@ -287,11 +283,7 @@ body {
     <span class="close" onclick="closeModal('modal3')">&times;</span>
     <div class="modal-title">Good Products Are Hard to Vary</div>
     <div class="modal-text">
-      The best products often seem simple on the surface, but they are the result of countless decisions and constraints. You cannot simply change one thing without breaking the entire system. The pursuit itself becomes the obstacle.
-      <br><br>
-      Consider a great user interface. Every pixel, every interaction, every animation is calibrated. It is not that each element is individually brilliant. It is that they work together. Remove one part and the whole collapses. Add something new and it disrupts the harmony.
-      <br><br>
-      This principle extends beyond products to ideas, businesses, and systems. The ones that work have achieved a kind of equilibrium. They are robust not because they are perfect, but because they are integrated. They work together.
+      The best products often seem simple on the surface, but they are the result of countless decisions and constraints.
     </div>
   </div>
 </div>
@@ -301,11 +293,7 @@ body {
     <span class="close" onclick="closeModal('modal4')">&times;</span>
     <div class="modal-title">In Most Difficult Things in Life, the Solution is Indirect</div>
     <div class="modal-text">
-      We are taught to face problems head-on, but the most stubborn problems often require indirect approaches. You cannot force creativity, health, or happiness. They come as byproducts of other activities. The pursuit itself becomes the obstacle.
-      <br><br>
-      Want to be creative? Do not stare at a blank page willing ideas into existence. Work on something else, go for a walk, read, rest. Creativity emerges in the margins. Want to be healthy? Do not obsess over health. Build a life where movement and good food are natural. Want to be happy? Do not chase happiness. Pursue meaningful work, deep relationships, and useful challenges.
-      <br><br>
-      The best things in life seem to work this way. They require you to look sideways, to approach from an angle you did not expect. This is why wisdom often sounds paradoxical. It is because the direct path and the true path are often different things entirely.
+      We are taught to face problems head-on, but the most stubborn problems often require indirect approaches.
     </div>
   </div>
 </div>
@@ -315,29 +303,11 @@ body {
     <span class="close" onclick="closeModal('modal5')">&times;</span>
     <div class="modal-title">You Have to Enjoy It a Lot</div>
     <div class="modal-text">
-      Marketing is an open problem. People try to solve marketing in different ways. Some people will create videos, some people will write or tweet. Some people will literally stand outside with a sandwich board. Some people will go make a whole bunch of friends and just throw parties and spread by word of mouth.
-      <br><br>
-      Now, it may be the case that for your business, one of those is much better than others, but the most important thing is picking a business that is congruent with whichever one you like to do. So for example, I have a lot of friends approach me and say, “Hey, let’s start a podcast together.” And I’m like, “Do you genuinely enjoy talking? Do you genuinely enjoy talking a lot?”
-      <br><br>
-      Because if you don’t, you’re not going to enjoy the process of podcasting. You’re not going to be the best at it. And they’re just trying to market. And so they start a podcast, they do two or three episodes, and then eventually they drop off. 
-      <br><br>
-      And they drop off because, first, they don’t enjoy podcasting. I don’t mean enjoy a little bit, you have to enjoy it a lot. If you’re going to be the top at it, you have to be almost psychopathic level at which you enjoy the thing. And so they’ll record a few episodes and then their readers or their listeners will pick up on, “Actually this person is just asking a bunch of questions, kind of flat-faced and doesn’t seem to really enjoy it, and is doing the podcast equivalent of looking at their watch.”
-      <br><br>
-      Whereas someone like Joe Rogan—he’s so immersed—he’s so into talking to all these weird people that he has on his podcast that the guy would be doing it even if he had no audience, and he was doing it when he had no audience, when he was on Ustream with just him and live streaming late at night on one random website.
-      <br><br>
-      So it’s no coincidence he’s the top podcaster. So when you’re marketing, you want to lean into your specific knowledge and into yourself. If you enjoy talking, then try podcasting. Maybe you enjoy talking in a more conversational tone, in which case you try a live network, like Twitter Spaces.
-      <br><br>
-      Maybe you enjoy writing. If you like long-form writing, Substack. If you like short-form writing, X. If you like really long-form writing, then maybe a bunch of blog posts that turn into a book. If you enjoy making videos, then maybe you use one of the latest AI models and you make some video and you overlay onto it.
-      <br><br>
-      But you have to do what is very natural to you. And part of the trick is picking a business where the thing that is natural to you lines up nicely or picking a role within that business or picking a co-founder in that business. It is a fit problem. It is a matching problem. And the good news is in the modern world, there are unlimited opportunities.
-      <br><br>
-      There are unlimited people, there are unlimited venues, there are unlimited forms of media. There’s just an unlimited set of things to choose from. So how are you going to find the thing that you’re really good at? You’re going to try everything and you’re going to try everything because you’re going to do. You’re going to be in the arena. You’re going to be trying to tackle and solve problems.
-      <br><br>
-      So the first time you do it, you might do a whole bunch of things you don’t enjoy doing, and you may not do them well, but eventually you’ll hone down on the thing that you really like to do and then you hopefully find that fit.
+      Marketing is an open problem. People try to solve marketing in different ways—videos, writing, tweeting, parties, word of mouth. Pick a business that matches what you naturally enjoy doing.
     </div>
   </div>
-    
 </div>
+
 <script>
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
@@ -350,29 +320,22 @@ window.onclick = function(event) {
         event.target.style.display = "none";
     }
 }
-
 function subscribe() {
     const emailInput = document.getElementById('emailInput');
     const button = document.getElementById('subscribeButton');
-
     if (emailInput.value.trim() === "") {
         alert("Please enter an email.");
         return;
     }
-
-    // 1 second delay
     setTimeout(() => {
         emailInput.value = "";
-
-        // Flash button white smoothly for 0.5s
         button.style.backgroundColor = "#ffffff";
         button.style.color = "#000000";
-
         setTimeout(() => {
             button.style.backgroundColor = "transparent";
             button.style.color = "#cccccc";
         }, 500);
-    }, 1000); // 1 second
+    }, 1000);
 }
 </script>
 </body>
