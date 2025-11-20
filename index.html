@@ -306,41 +306,29 @@
 
 <!-- SCRIPTS -->
 <script>
-    function openModal(modalId) {
-        document.getElementById(modalId).style.display = "block";
+function subscribe() {
+    const emailInput = document.getElementById('emailInput');
+    const button = document.getElementById('subscribeButton');
+
+    if (emailInput.value.trim() === "") {
+        alert("Please enter an email.");
+        return;
     }
 
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-    }
+    // Clear input immediately
+    emailInput.value = "";
 
-    window.onclick = function(event) {
-        if (event.target.classList.contains('modal')) {
-            event.target.style.display = "none";
-        }
-    }
-
-    function subscribe() {
-        const emailInput = document.getElementById('emailInput');
-        const button = document.getElementById('subscribeButton');
-
-        if (emailInput.value.trim() === "") {
-            alert("Please enter an email.");
-            return;
-        }
-
-        // Flash button white for 0.5 seconds
+    // Wait 1.5 seconds, then flash button white for 0.5 sec
+    setTimeout(() => {
         button.style.backgroundColor = "#ffffff";
         button.style.color = "#000000";
 
         setTimeout(() => {
             button.style.backgroundColor = "transparent";
             button.style.color = "#cccccc";
-        }, 500);
-
-        // Clear input
-        emailInput.value = "";
-    }
+        }, 500); // flash duration
+    }, 1500); // delay before flash
+}
 </script>
 </body>
 </html>
