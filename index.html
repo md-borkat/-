@@ -82,13 +82,14 @@
 }
 
 .subscribe-box button {
-    background-color: transparent;
-    border: 1px solid #cccccc;
-    color: #cccccc;
     padding: 10px 25px;
+    border: 1px solid #cccccc;
+    background-color: transparent;
+    color: #cccccc;
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 14px;
+    transition: background-color 0.2s, color 0.2s; /* smooth flash */
 }
 
 .subscribe-box button:hover {
@@ -388,26 +389,28 @@
         }
     }
 </script>
-    <script>
+<script>
 function subscribe() {
     const emailInput = document.getElementById('emailInput');
-    const checkmark = document.getElementById('checkmark');
+    const button = document.getElementById('subscribeButton');
 
     if (emailInput.value.trim() === "") {
         alert("Please enter an email.");
         return;
     }
-    
-    // Show tick mark
-    checkmark.style.opacity = 1;
 
-    // Clear input field
-    emailInput.value = "";
+    // Flash white for 0.5 seconds
+    button.style.backgroundColor = "#ffffff";
+    button.style.color = "#000000";
 
-    // Hide tick after 2 seconds
     setTimeout(() => {
-        checkmark.style.opacity = 0;
-    }, 2000);
+        // Revert back to original
+        button.style.backgroundColor = "transparent";
+        button.style.color = "#cccccc";
+    }, 500);
+
+    // Clear input
+    emailInput.value = "";
 }
 </script>
 </body>
