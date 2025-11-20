@@ -89,7 +89,7 @@ body {
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 14px;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 .subscribe-box button:hover {
@@ -312,6 +312,8 @@ body {
 
 <div id="modal5" class="modal">
     <div class="modal-content">
+       <div id="modal5" class="modal">
+    <div class="modal-content">
         <span class="close" onclick="closeModal('modal5')">&times;</span>
         <div class="modal-title">You Have to Enjoy It a Lot</div>
         <div class="modal-text">
@@ -347,11 +349,12 @@ function subscribe() {
         return;
     }
 
-    // 2 seconds delay
+    // 1 second delay before clearing input
     setTimeout(() => {
         emailInput.value = "";
 
-        // Flash button white for 0.5s
+        // Smooth flash button white for 0.5s
+        button.style.transition = "background-color 0.25s ease, color 0.25s ease";
         button.style.backgroundColor = "#ffffff";
         button.style.color = "#000000";
 
@@ -359,7 +362,7 @@ function subscribe() {
             button.style.backgroundColor = "transparent";
             button.style.color = "#cccccc";
         }, 500);
-    }, 2000);
+    }, 1000);
 }
 </script>
 </body>
