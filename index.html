@@ -315,19 +315,21 @@ function subscribe() {
         return;
     }
 
-    // Clear input immediately
-    emailInput.value = "";
-
-    // Wait 1.5 seconds, then flash button white for 0.5 sec
+    // Wait 2 seconds before clearing input and flashing button
     setTimeout(() => {
+        // Clear input
+        emailInput.value = "";
+
+        // Flash button white
         button.style.backgroundColor = "#ffffff";
         button.style.color = "#000000";
 
+        // Revert after 0.5 seconds
         setTimeout(() => {
             button.style.backgroundColor = "transparent";
             button.style.color = "#cccccc";
-        }, 500); // flash duration
-    }, 1500); // delay before flash
+        }, 500);
+    }, 2000);
 }
 </script>
 </body>
