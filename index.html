@@ -55,46 +55,52 @@
         color: #ffffff;
     }
     
-    .subscribe-section {
-        margin-bottom: 80px;
-        padding-bottom: 60px;
-        border-bottom: 1px solid #333333;
-    }
-    
-    .subscribe-form {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-    
-    .subscribe-form input {
-        flex: 1;
-        min-width: 200px;
-        background-color: #1a1a1a;
-        border: 1px solid #cccccc;
-        color: #cccccc;
-        padding: 10px 15px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 14px;
-    }
-    
-    .subscribe-form input::placeholder {
-        color: #666666;
-    }
-    
-    .subscribe-form button {
-        background-color: transparent;
-        border: 1px solid #cccccc;
-        color: #cccccc;
-        padding: 10px 25px;
-        cursor: pointer;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 14px;
-    }
-    
-    .subscribe-form button:hover {
-        background-color: #1a1a1a;
-    }
+.subscribe-box {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscribe-box input {
+    flex: 1;
+    min-width: 200px;
+    background-color: #1a1a1a;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    padding: 10px 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.subscribe-box input::placeholder {
+    color: #666666;
+}
+
+.subscribe-box button {
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.subscribe-box button:hover {
+    background-color: #1a1a1a;
+}
+
+.checkmark {
+    font-size: 20px;
+    color: #0f0; /* green tick */
+    opacity: 0;  /* hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
     
     .article {
         margin-bottom: 70px;
@@ -205,12 +211,11 @@
 </div>
         </div>
 
-    <div class="subscribe-section">
-        <form class="subscribe-form" onsubmit="return false;">
-            <input type="email" placeholder="Enter your email">
-            <button type="button">Subscribe</button>
-        </form>
-    </div>
+<div class="subscribe-box">
+    <input type="email" id="emailInput" placeholder="Enter your email" required>
+    <button onclick="subscribe()">Subscribe</button>
+    <span id="checkmark" class="checkmark">✔️</span>
+</div>
 
         <div class="article">
     <div class="article-title">You Have to Enjoy It a Lot</div>
@@ -382,6 +387,28 @@
             event.target.style.display = "none";
         }
     }
+</script>
+    <script>
+function subscribe() {
+    const emailInput = document.getElementById('emailInput');
+    const checkmark = document.getElementById('checkmark');
+
+    if (emailInput.value.trim() === "") {
+        alert("Please enter an email.");
+        return;
+    }
+    
+    // Show tick mark
+    checkmark.style.opacity = 1;
+
+    // Clear input field
+    emailInput.value = "";
+
+    // Hide tick after 2 seconds
+    setTimeout(() => {
+        checkmark.style.opacity = 0;
+    }, 2000);
+}
 </script>
 </body>
 </html>
