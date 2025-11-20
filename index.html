@@ -1,199 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>borkat</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>borkat</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            background-color: #000000;
-            color: #cccccc;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.8;
-            padding: 40px 20px;
-        }
+body {
+    background-color: #000000;
+    color: #cccccc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.8;
+    padding: 40px 20px;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 80px;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #ff0000;
-        }
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff0000;
+}
 
-        .nav {
-            display: flex;
-            gap: 30px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-        }
+.nav {
+    display: flex;
+    gap: 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
 
-        .nav a {
-            color: #cccccc;
-            text-decoration: none;
-        }
+.nav a {
+    color: #cccccc;
+    text-decoration: none;
+}
 
-        .nav a:hover {
-            color: #ffffff;
-        }
+.nav a:hover {
+    color: #ffffff;
+}
 
-        .subscribe-box {
-            margin-bottom: 80px;
-            padding-bottom: 60px;
-            border-bottom: 1px solid #333333;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+.subscribe-box {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
 
-        .subscribe-box input {
-            flex: 1;
-            min-width: 200px;
-            background-color: #1a1a1a;
-            border: 1px solid #cccccc;
-            color: #cccccc;
-            padding: 10px 15px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 14px;
-            outline: none;
-        }
+.subscribe-box input {
+    flex: 1;
+    min-width: 200px;
+    background-color: #1a1a1a;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    padding: 10px 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
 
-        .subscribe-box input::placeholder {
-            color: #666666;
-        }
+.subscribe-box input::placeholder {
+    color: #666666;
+}
 
-        .subscribe-box button {
-            padding: 10px 25px;
-            border: 1px solid #cccccc;
-            background-color: transparent;
-            color: #cccccc;
-            cursor: pointer;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 14px;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
+.subscribe-box button {
+    padding: 10px 25px;
+    border: 1px solid #cccccc;
+    background-color: transparent;
+    color: #cccccc;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
 
-        .subscribe-box button:hover {
-            background-color: #1a1a1a;
-        }
+.subscribe-box button:hover {
+    background-color: #1a1a1a;
+}
 
-        .article {
-            margin-bottom: 70px;
-        }
+.article {
+    margin-bottom: 70px;
+}
 
-        .article-title {
-            font-weight: bold;
-            color: #ffffff;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
+.article-title {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
 
-        .article-excerpt {
-            color: #cccccc;
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
+.article-excerpt {
+    color: #cccccc;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
 
-        .read-more {
-            color: #cccccc;
-            text-decoration: underline;
-            cursor: pointer;
-            font-size: 14px;
-        }
+.read-more {
+    color: #cccccc;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-        .read-more:hover {
-            color: #ffffff;
-        }
+.read-more:hover {
+    color: #ffffff;
+}
 
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.95);
-            overflow: auto;
-        }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+    overflow: auto;
+}
 
-        .modal-content {
-            background-color: #000000;
-            margin: 50px auto;
-            padding: 40px;
-            color: #cccccc;
-            max-width: 800px;
-            border: 1px solid #333333;
-        }
+.modal-content {
+    background-color: #000000;
+    margin: 50px auto;
+    padding: 40px;
+    color: #cccccc;
+    max-width: 800px;
+    border: 1px solid #333333;
+}
 
-        .modal-title {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
+.modal-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
 
-        .modal-text {
-            color: #cccccc;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
+.modal-text {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
 
-        .close {
-            color: #cccccc;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            float: right;
-        }
+.close {
+    color: #cccccc;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
 
-        .close:hover {
-            color: #ffffff;
-        }
+.close:hover {
+    color: #ffffff;
+}
 
-        @media (max-width: 600px) {
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-                margin-bottom: 50px;
-            }
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
 
-            .nav {
-                gap: 20px;
-            }
+    .nav {
+        gap: 20px;
+    }
 
-            .subscribe-box {
-                flex-direction: column;
-            }
+    .subscribe-box {
+        flex-direction: column;
+    }
 
-            .subscribe-box input {
-                min-width: 100%;
-            }
+    .subscribe-box input {
+        min-width: 100%;
+    }
 
-            body {
-                padding: 30px 15px;
-            }
-        }
-    </style>
+    body {
+        padding: 30px 15px;
+    }
+}
+</style>
 </head>
 <body>
 <div class="container">
@@ -259,7 +259,11 @@
         <span class="close" onclick="closeModal('modal1')">&times;</span>
         <div class="modal-title">When You Truly Work for Yourself</div>
         <div class="modal-text">
-            <!-- full text here -->
+            The shift from employment to self-employment is more than financial. It rewires how you think about time, risk, and responsibility. When you work for yourself, there is no one to blame for failure except yourself. This clarity is both terrifying and liberating.
+            <br><br>
+            You become acutely aware of every decision's consequences. There is no safety net of a paycheck arriving regardless of performance. Your income is directly tied to the value you create and the decisions you make. This forces a level of intentionality that employment rarely demands.
+            <br><br>
+            But there is something deeper. When you work for yourself, you stop being a cog in a machine. You are no longer optimizing for someone else's vision or quarterly targets. You can build something that matters to you. The work itself becomes different when you own it completely.
         </div>
     </div>
 </div>
@@ -269,7 +273,11 @@
         <span class="close" onclick="closeModal('modal2')">&times;</span>
         <div class="modal-title">Blame Yourself for Everything, and Preserve Your Agency</div>
         <div class="modal-text">
-            <!-- full text here -->
+            Most people externalize failure. The economy failed them. Their boss was unfair. Their circumstances were unlucky. But the moment you stop blaming external factors, you reclaim your power. You become the author of your life instead of a character in someone else's story.
+            <br><br>
+            This is not about self-blame in the destructive sense. It is about taking radical responsibility. Even when circumstances are genuinely difficult, there are still choices. You can choose how to respond, what to learn, where to pivot. This agency is the most valuable thing you possess.
+            <br><br>
+            People who blame themselves for failures are often the most successful because they believe they can change the outcome next time. They do not wait for permission or for conditions to improve. They move. And most importantly, they learn faster than anyone else.
         </div>
     </div>
 </div>
@@ -279,7 +287,11 @@
         <span class="close" onclick="closeModal('modal3')">&times;</span>
         <div class="modal-title">Good Products Are Hard to Vary</div>
         <div class="modal-text">
-            <!-- full text here -->
+            The best products often seem simple on the surface, but they are the result of countless decisions and constraints. You cannot simply change one thing without breaking the entire system. The pursuit itself becomes the obstacle.
+            <br><br>
+            Consider a great user interface. Every pixel, every interaction, every animation is calibrated. It is not that each element is individually brilliant. It is that they work together. Remove one part and the whole collapses. Add something new and it disrupts the harmony.
+            <br><br>
+            This principle extends beyond products to ideas, businesses, and systems. The ones that work have achieved a kind of equilibrium. They are robust not because they are perfect, but because they are integrated. They work together.
         </div>
     </div>
 </div>
@@ -289,7 +301,11 @@
         <span class="close" onclick="closeModal('modal4')">&times;</span>
         <div class="modal-title">In Most Difficult Things in Life, the Solution is Indirect</div>
         <div class="modal-text">
-            <!-- full text here -->
+            We are taught to face problems head-on, but the most stubborn problems often require indirect approaches. You cannot force creativity, health, or happiness. They come as byproducts of other activities. The pursuit itself becomes the obstacle.
+            <br><br>
+            Want to be creative? Do not stare at a blank page willing ideas into existence. Work on something else, go for a walk, read, rest. Creativity emerges in the margins. Want to be healthy? Do not obsess over health. Build a life where movement and good food are natural. Want to be happy? Do not chase happiness. Pursue meaningful work, deep relationships, and useful challenges.
+            <br><br>
+            The best things in life seem to work this way. They require you to look sideways, to approach from an angle you did not expect. This is why wisdom often sounds paradoxical. It is because the direct path and the true path are often different things entirely.
         </div>
     </div>
 </div>
@@ -299,13 +315,29 @@
         <span class="close" onclick="closeModal('modal5')">&times;</span>
         <div class="modal-title">You Have to Enjoy It a Lot</div>
         <div class="modal-text">
-            <!-- full text here -->
+            Marketing is an open problem. People try to solve it in different ways—videos, writing, tweeting, 
+            parties, word of mouth. But the key is choosing a business that matches what you naturally enjoy doing.
+            <br><br>
+            The first time you do it, you might do a whole bunch of things you don’t enjoy doing, and you may not do 
+            them well, but eventually you’ll hone down on the thing that you really like to do and then you hopefully find 
+            that fit.
         </div>
     </div>
 </div>
 
-<!-- SCRIPTS -->
 <script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
+}
+
 function subscribe() {
     const emailInput = document.getElementById('emailInput');
     const button = document.getElementById('subscribeButton');
@@ -315,16 +347,14 @@ function subscribe() {
         return;
     }
 
-    // Wait 2 seconds before clearing input and flashing button
+    // 2 seconds delay
     setTimeout(() => {
-        // Clear input
         emailInput.value = "";
 
-        // Flash button white
+        // Flash button white for 0.5s
         button.style.backgroundColor = "#ffffff";
         button.style.color = "#000000";
 
-        // Revert after 0.5 seconds
         setTimeout(() => {
             button.style.backgroundColor = "transparent";
             button.style.color = "#cccccc";
