@@ -328,18 +328,6 @@ body {
 </div>
 
 <script>
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.style.display = "none";
-    }
-}
-
 function subscribe() {
     const emailInput = document.getElementById('emailInput');
     const button = document.getElementById('subscribeButton');
@@ -349,12 +337,11 @@ function subscribe() {
         return;
     }
 
-    // 1 second delay before clearing input
+    // 1 second delay
     setTimeout(() => {
         emailInput.value = "";
 
-        // Smooth flash button white for 0.5s
-        button.style.transition = "background-color 0.25s ease, color 0.25s ease";
+        // Flash button white smoothly for 0.5s
         button.style.backgroundColor = "#ffffff";
         button.style.color = "#000000";
 
@@ -362,7 +349,7 @@ function subscribe() {
             button.style.backgroundColor = "transparent";
             button.style.color = "#cccccc";
         }, 500);
-    }, 1000);
+    }, 1000); // 1 second
 }
 </script>
 </body>
