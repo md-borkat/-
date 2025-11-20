@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff0000;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 30px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+    }
+    
+    .nav a {
+        color: #cccccc;
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        color: #ffffff;
+    }
+    
+    .newsletter-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .newsletter-content {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .newsletter-heading {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 32px;
+        margin-bottom: 40px;
+        line-height: 1.4;
+    }
+    
+    .newsletter-text {
+        color: #cccccc;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .newsletter-form input {
+        background-color: #1a1a1a;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 12px 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 14px;
+    }
+    
+    .newsletter-form input::placeholder {
+        color: #666666;
+    }
+    
+    .newsletter-form button {
+        background-color: transparent;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 14px;
+    }
+    
+    .newsletter-form button:hover {
+        background-color: #1a1a1a;
+    }
+    
+    @media (max-width: 600px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+        
+        .nav {
+            gap: 20px;
+        }
+        
+        .newsletter-heading {
+            font-size: 24px;
+        }
+        
+        body {
+            padding: 30px 15px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">borkat</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="archive.html">Archive</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+
+<div class="newsletter-container">
+    <div class="newsletter-content">
+        <div class="newsletter-heading">Get New Writing Delivered</div>
+        <div class="newsletter-text">Enter your email to receive new writing.</div>
+        <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="button">Subscribe</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

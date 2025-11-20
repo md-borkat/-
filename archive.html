@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 40px 20px;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff0000;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 30px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+    }
+    
+    .nav a {
+        color: #cccccc;
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        color: #ffffff;
+    }
+    
+    .archive-item {
+        margin-bottom: 50px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #333333;
+    }
+    
+    .archive-title {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 18px;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+    
+    .archive-title:hover {
+        color: #cccccc;
+    }
+    
+    .archive-text {
+        display: none;
+        color: #cccccc;
+        line-height: 1.8;
+    }
+    
+    .archive-text.active {
+        display: block;
+    }
+    
+    @media (max-width: 600px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+        
+        .nav {
+            gap: 20px;
+        }
+        
+        body {
+            padding: 30px 15px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">borkat</div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">When You Truly Work for Yourself</div>
+        <div class="archive-text">
+            The shift from employment to self-employment is more than financial. It rewires how you think about time, risk, and responsibility. When you work for yourself, there is no one to blame for failure except yourself. This clarity is both terrifying and liberating. You become acutely aware of every decision's consequences. There is no safety net of a paycheck arriving regardless of performance. Your income is directly tied to the value you create and the decisions you make. This forces a level of intentionality that employment rarely demands. But there is something deeper. When you work for yourself, you stop being a cog in a machine. You are no longer optimizing for someone else's vision or quarterly targets. You can build something that matters to you. The work itself becomes different when you own it completely.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">Blame Yourself for Everything, and Preserve Your Agency</div>
+        <div class="archive-text">
+            Most people externalize failure. The economy failed them. Their boss was unfair. Their circumstances were unlucky. But the moment you stop blaming external factors, you reclaim your power. You become the author of your life instead of a character in someone else's story. This is not about self-blame in the destructive sense. It is about taking radical responsibility. Even when circumstances are genuinely difficult, there are still choices. You can choose how to respond, what to learn, where to pivot. This agency is the most valuable thing you possess. People who blame themselves for failures are often the most successful because they believe they can change the outcome next time. They do not wait for permission or for conditions to improve. They move. And most importantly, they learn faster than anyone else.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">Good Products Are Hard to Vary</div>
+        <div class="archive-text">
+            The best products often seem simple on the surface, but they are the result of countless decisions and constraints. You cannot simply change one thing without breaking the entire system. This is why most attempts to improve successful products fail. Consider a great user interface. Every pixel, every interaction, every animation is calibrated. It is not that each element is individually brilliant. It is that they work together. Remove one part and the whole collapses. Add something new and it disrupts the harmony. This principle extends beyond products to ideas, businesses, and systems. The ones that work have achieved a kind of equilibrium. They are robust not because they are perfect, but because they are integrated. This is why innovation is so difficult. You cannot just bolt on the new. You have to understand the whole.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">In Most Difficult Things in Life, the Solution is Indirect</div>
+        <div class="archive-text">
+            We are taught to face problems head-on, but the most stubborn problems often require indirect approaches. You cannot force creativity, health, or happiness. They come as byproducts of other activities. The pursuit itself becomes the obstacle. Want to be creative? Do not stare at a blank page willing ideas into existence. Work on something else, go for a walk, read, rest. Creativity emerges in the margins. Want to be healthy? Do not obsess over health. Build a life where movement and good food are natural. Want to be happy? Do not chase happiness. Pursue meaningful work, deep relationships, and useful challenges. The best things in life seem to work this way. They require you to look sideways, to approach from an angle you did not expect. This is why wisdom often sounds paradoxical. It is because the direct path and the true path are often different things entirely.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">The Power of Constraints</div>
+        <div class="archive-text">
+            Constraints are not the enemy of creativity. They are its fuel. When you have unlimited resources and unlimited time, you face paralysis. You do not know where to begin. But when you have constraints, you are forced to prioritize. You must think strategically. You must cut away everything that is not essential. The best artists, writers, and builders work within constraints. A sonnet has 14 lines. A haiku has three lines. Twitter once had 140 characters. These constraints did not limit expression. They focused it. They forced clarity. Many of the most innovative solutions come from people working with limited resources. They cannot waste anything. They cannot afford to explore every tangent. They must be ruthless about what matters.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">Learning in Public</div>
+        <div class="archive-text">
+            Most people learn in private, hoping no one notices their mistakes. But the fastest learners learn in public. They share their work early. They invite criticism. They are willing to be wrong in front of an audience. This is uncomfortable, but it accelerates growth exponentially. When you learn in public, you get immediate feedback. You learn from hundreds of people instead of just yourself. You build an audience of people interested in your journey. You create accountability. You cannot pretend you are progressing when you are not. Learning in public also forces clarity. You cannot hide behind vague thinking. You have to articulate your ideas clearly enough for others to understand and critique them.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">The Myth of Inspiration</div>
+        <div class="archive-text">
+            People wait for inspiration. They sit by the window hoping lightning will strike. But inspiration is a byproduct of work, not the cause of it. The professional shows up regardless of whether they feel inspired. They have a system. They have a time and a place. They have reduced the friction between thinking and doing. The moment you show up consistently, inspiration becomes more frequent. Your brain adapts. It knows it is time to create. The ideas flow more easily because you have built the habit. But people get this backwards. They wait for inspiration before they start working. Then they wonder why nothing ever happens. Start working without inspiration, and inspiration will come.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">The Importance of Friction</div>
+        <div class="archive-text">
+            We are obsessed with removing friction. We want everything faster, easier, more convenient. But some friction is valuable. It prevents thoughtlessness. When something requires effort, you think about whether it is worth doing. You cannot just scroll mindlessly if scrolling takes conscious action. You cannot buy impulsively if the checkout process requires you to really commit. Some friction protects us from ourselves. The friction of writing longhand makes you think differently than typing. The friction of a difficult book makes the insights more valuable than skimming an article. The friction of saving money makes spending more intentional.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">Depth vs Breadth</div>
+        <div class="archive-text">
+            You can be a generalist or a specialist. You can know a little about many things or a lot about one thing. Both have value, but they are not equal. The specialist typically has more leverage. They can command higher fees. They can make unique contributions. They can see patterns that generalists miss. But the generalist has flexibility. They can adapt to changing conditions. They can combine ideas from different domains. The ideal is probably to have deep expertise in one or two areas and broad knowledge in many others. This gives you both leverage and flexibility. But most people try to be too broad. They fear specializing because it seems limiting. But specialization is where the interesting work happens.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">The Cost of Switching</div>
+        <div class="archive-text">
+            Context switching has a cost. Every time you switch between tasks, your brain takes time to reload. You lose the thread of what you were thinking. You lose momentum. This is why deep work requires blocks of uninterrupted time. If you are constantly switching between email, Slack, social media, and work, you never reach the state where real thinking happens. The cost of switching also applies to careers and projects. Every time you start something new, you are essentially starting over. You lose the progress you had made. You lose the relationships you had built. This is why consistency matters so much. It is not just about putting in the time. It is about maintaining momentum.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">Small Edges Add Up</div>
+        <div class="archive-text">
+            You do not need to be twice as good to win. You just need to be slightly better than the competition in a few key areas. An athlete who is 5 percent faster and 5 percent stronger will win most of the time. A business that is slightly better at customer service and slightly faster at iteration will dominate. This is the power of small edges. They compound over time. If you improve by 1 percent every day, you will be 37 times better in a year. This is not a linear relationship. This is exponential. Small edges also have the advantage of being achievable. It is hard to become twice as good at something. But becoming 1 percent better is always possible. You just need to do it consistently.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">The Leverage of Systems</div>
+        <div class="archive-text">
+            Systems are leverage. If you have a system, you can achieve 10 times the output without 10 times the effort. A system is a repeatable process that gets better over time. It removes decision-making. It removes friction. It ensures consistency. Most people do not build systems. They just grind. They do the same task the same way over and over, not improving, not learning. But when you build a system, you are essentially creating an asset. You can then focus on improving the system itself rather than doing the task. The highest-leverage work is not doing the work. It is building the system that does the work. This is why entrepreneurs are different from employees. They are obsessed with building systems.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">Attention is Your Currency</div>
+        <div class="archive-text">
+            You have a finite amount of attention. It is your most valuable resource. Every moment you spend on something is a moment you cannot spend on something else. This is why attention is the most important decision you make. What you pay attention to shapes what you become. If you pay attention to drama, you become dramatic. If you pay attention to growth, you become growth-oriented. If you pay attention to problems, you become a problem-solver. Most people do not choose what they pay attention to. They let algorithms choose. They let the phone choose. They let other people choose. But you can reclaim this choice. You can decide where your attention goes. This is the foundation of intentional living.
+        </div>
+    </div>
+    
+    <div class="archive-item">
+        <div class="archive-title" onclick="toggleText(this)">The Value of Boredom</div>
+        <div class="archive-text">
+            We are so afraid of boredom that we constantly fill every moment. But boredom is where thinking happens. When you are bored, your mind wanders. It makes connections. It explores. This is when ideas emerge. When you are constantly stimulated, you do not have space for this. Your mind is always reacting, never reflecting. We have become so addicted to stimulation that we fear the absence of it. But the absence of stimulation is not emptiness. It is spaciousness. It is where real work happens. If you want to think clearly and creatively, you need to be bored sometimes. You need to stare out the window. You need to go for walks with no phone. You need empty time.
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleText(element) {
+        const textElement = element.nextElementSibling;
+        textElement.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
